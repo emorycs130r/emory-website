@@ -1,0 +1,34 @@
+theme = "harbor"
+baseurl = "https://emorycs130r.github.io"
+title = "Emory CS130R Course"
+paginate = 3
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+footnoteReturnLinkContents = "^"
+
+[Author]
+  name = "Vishwanath Seshagiri"
+
+[outputs]
+  section = ["JSON", "HTML"]
+[permalinks]
+	post = "/:year/:month/:day/:filename/"
+	page = "/:filename/"
+
+[[params.nav]]
+  identifier = "about"
+  name = "About"
+  icon = "fas fa-user fa-lg"
+  url = "about/"
+  weight = 3
+
+[params]
+  mainSections = ["post"]
+  favicon = "favicon.ico"
+
+  [params.logo]
+    url = "icon.png"
+    width = 50
+    height = 50
+    alt = "Logo"
